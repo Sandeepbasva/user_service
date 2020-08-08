@@ -4,6 +4,7 @@ from django.db import models
 
 
 class User(models.Model):
+    """ User Model"""
     id = models.CharField(primary_key=True, editable=False, max_length=10)
     name = models.CharField(max_length=64)
     country = models.CharField(max_length=32, null=True)
@@ -22,6 +23,7 @@ class User(models.Model):
 
 
 class ActivityPeriod(models.Model):
+    """User activity Model"""
     user = models.ForeignKey(User, null=True)
     start_time = models.DateTimeField(null=True, default=None)
     end_time = models.DateTimeField(null=True, default=None)

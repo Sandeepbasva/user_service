@@ -7,10 +7,12 @@ from .utils import Response, Result
 
 
 def home(request):
+    """View to display homepage"""
     return HttpResponse("<html> <h3>Welcome to Homepage</h3> </html>")
 
 
 def get_user_activity(request):
+    """View to get user activities"""
     users = User.objects.all()
     members = list()
     for user in users:

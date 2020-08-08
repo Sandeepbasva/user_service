@@ -20,5 +20,5 @@ from apps.user_activity.views import home, get_user_activity
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('^$', home, name="home"),
-    url('^user_activity/$', get_user_activity, name="user_activity"),
+    url('^/user/activities/$', get_user_activity, name="user_activity"),
 ]
