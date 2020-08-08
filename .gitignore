@@ -11,3 +11,4 @@ local_settings.py
 *.tar.bz2
 staticgen
 *.sqlite3
+.idea
