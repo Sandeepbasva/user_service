@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from apps.user_activity.views import home, get_user_activity
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url('^$', home, name="home"),
+    url('^user_activity/$', get_user_activity, name="user_activity"),
 ]
