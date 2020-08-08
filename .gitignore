@@ -1,0 +1,14 @@
+*.log
+*.pyc
+*.db
+*.swp
+.project
+.pydevproject
+.settings
+local_settings.py
+*.bkp
+*.tar.gz
+*.tar.bz2
+staticgen
+*.sqlite3
+.idea
